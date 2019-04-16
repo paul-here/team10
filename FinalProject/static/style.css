@@ -1,0 +1,17 @@
+body {
+  background-color: powderblue; }
+
+h2 {
+  font: Times, Helvetica;
+  color: darkgreen; }
+
+p {
+  font: Times, Helvetica;
+  color: #334; }
+
+ul {
+  font: Times, Helvetica; }
+  ul mid {
+    color: #334; }
+  ul top {
+    color: green; }
