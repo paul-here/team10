@@ -7,7 +7,7 @@ app = Flask(__name__)
 ### News API Sample Code
 from newsapi import NewsApiClient
 
-# https://github.com/mattlisiv/newsapi-python/tree/master/newsapi <-- more info?
+# https://github.com/mattlisiv/newsapi-python/tree/master/newsapi <-- more info
 
 # Init
 newsapi = NewsApiClient(api_key='00d22965bc8847a692f7689dd668ca3c')
