@@ -1,0 +1,35 @@
+//in cmd, cd to package.json level, then type "npm run scss"
+
+$font_stack: Times, Helvetica;
+$primary_color: #334;
+
+body {
+    background-color: powderblue;
+}
+
+
+h2 {
+    font: $font_stack;
+    color: darkgreen;
+}
+
+
+p {
+  font: $font_stack;
+  color: $primary_color;
+}
+
+
+ul {
+
+  font: $font_stack;
+
+  mid {
+    color: $primary_color;
+  }
+
+
+  top {
+    color: green;
+  }
+}
