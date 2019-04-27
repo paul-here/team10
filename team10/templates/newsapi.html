@@ -8,9 +8,10 @@
 <body>
   {% block content %}
       {% for item in data['articles'] %}
-        <h2>{{item['title']}}</h2>
+        <h2><a href="{{item['url']}}">{{item['title']}}</a></h2>
         <h3>{{item['author']}} for {{item['source']['name']}}</h3>
         <p>{{item['description']}}</p>
+        <img src="{{item['urlToImage']}}"/>
       {% endfor %}
 
 
