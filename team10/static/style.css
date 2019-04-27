@@ -1,5 +1,14 @@
 body {
-  background-color: powderblue; }
+    text-align: center;
+    background-image: linear-gradient(to right, #ffe6e6,#fff6e6,#ffffe6,#e6ffe6,#e6e6ff,#f4e6ff,#fce9fc);
+    font-family: 'Open Sans', sans-serif;
+}
+
+img {
+    border-radius: 20px;
+    padding: 15px;
+    width: 150px;
+}
 
 h2 {
   font: Times, Helvetica;
