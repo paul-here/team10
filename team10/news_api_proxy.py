@@ -11,7 +11,7 @@ from newsapi.newsapi_client import NewsApiClient
 newsapi = NewsApiClient(api_key='00d22965bc8847a692f7689dd668ca3c')
 app = Flask(__name__)
 # /v2/top-headlines
-top_headlines = newsapi.get_top_headlines(q='bitcoin')
+top_headlines = newsapi.get_top_headlines(q='bitcoin', language='en')
                                           #sources='bbc-news,the-verge',
                                           #category='business',
                                           #language='en'
@@ -34,8 +34,10 @@ top_headlines = newsapi.get_top_headlines(q='bitcoin')
 # default route -- homepage
 @app.route('/')
 def news():
-    return render_template('newsapi.html')
+    return render_template('newsapi.html', data=top_headlines)
 
 
-#print(top_headlines)
-news()
+if __name__ == "__main__":
+    app.run(debug=True)
+# print(top_headlines)
+# news()
