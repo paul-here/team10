@@ -12,9 +12,10 @@ img {
 
 iframe {
   border-radius: 20px;
+  border: solid blue;
   background-color: white;
-  width 80%;
-  height: 300px;
+  width: 80%;
+  height: 425px;
 }
 
 h2 {
