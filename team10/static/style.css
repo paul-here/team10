@@ -18,9 +18,27 @@ iframe {
   height: 425px;
 }
 
+button {
+  border: 1px solid white;
+  padding: 10px 24px;
+  margin: 6px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  border-radius: 10px;
+}
+
+button:hover {
+  cursor: pointer;
+  border: 1px solid blue;
+}
+
+
 h2 {
-  font: Times, Helvetica;
-  color: darkgreen; }
+  font-family: 'Open Sans', sans-serif;
+  font-style: oblique;
+  font-size: 3em;
+  color: blue;
+}
 
 p {
   font: Times, Helvetica;

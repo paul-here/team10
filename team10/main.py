@@ -8,7 +8,7 @@ app = Flask(__name__)
 # default route -- homepage
 @app.route('/')
 def default():
-    return render_template('homepage.html')
+    return render_template('homepage.html', iframe_src="/news")
 
 
 @app.route('/news')
