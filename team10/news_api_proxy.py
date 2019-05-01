@@ -6,7 +6,7 @@ from newsapi.newsapi_client import NewsApiClient
 ### News API Sample Code
 # https://github.com/mattlisiv/newsapi-python/tree/master/newsapi
 
-app = Flask(__name__)
+
 
 
 class News:
@@ -28,11 +28,10 @@ class News:
 # default route -- homepage
 @app.route('/')
 def news():
-    return render_template('newsapi.html', data=top_headlines)
+    return render_template('newsapi.html', data=news.get_data())
 
 
 if __name__ == "__main__":
-
+    app = Flask(__name__)
+    news = News('bitcoin')
     app.run(debug=True)
-# print(top_headlines)
-# news()
