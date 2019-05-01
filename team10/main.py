@@ -14,8 +14,12 @@ def default():
 @app.route('/news')
 def news():
     # init proxy
-    news_proxy = News('bitcoin')
-    return render_template('newsapi.html', data=news_proxy.get_data())
+    query = request.args.get('query', default = "")
+    if(query == ""):
+        return render_template('searchbar.html')
+    else:
+        news_proxy = News('bitcoin')
+        return render_template('newsapi.html', data=news_proxy.get_data())
 
 if __name__ == "__main__":
     app.run(debug=True)
