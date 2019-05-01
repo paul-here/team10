@@ -4,6 +4,10 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+h1 {
+	font: Times, Helvetica;	
+}
+
 img {
     border-radius: 20px;
     padding: 15px;
