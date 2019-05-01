@@ -1,20 +1,5 @@
 $(document).ready(function() {
-
-  $(".nav").on("click", function(){
-
-    let action = this.id;
-    alert(action);
-
-    $.ajax({
-      method: "GET",
-      url: "api/favoritesAPI.php",
-      dataType: "json",
-      data: { "action": action },
-      success: function(data, status) {
-
-      }
-    }); // ajax
-
-  }); // nav click
-
-});
+  $("button").on("click", function(){
+      $("iframe").attr("src", "/" + this.id);
+  }); // button click
+}); // document ready
