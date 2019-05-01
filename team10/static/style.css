@@ -10,6 +10,13 @@ img {
     width: 150px;
 }
 
+iframe {
+  border-radius: 20px;
+  background-color: white;
+  width 80%;
+  height: 300px;
+}
+
 h2 {
   font: Times, Helvetica;
   color: darkgreen; }

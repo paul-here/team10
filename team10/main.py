@@ -2,9 +2,8 @@ from flask import Flask, request, render_template
 from News_API_Proxy import News
 
 
-# init objects
+# init app
 app = Flask(__name__)
-
 
 # default route -- homepage
 @app.route('/')
@@ -14,6 +13,7 @@ def default():
 
 @app.route('/news')
 def news():
+    # init proxy
     news_proxy = News('bitcoin')
     return render_template('newsapi.html', data=news_proxy.get_data())
 
