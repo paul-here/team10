@@ -1,13 +1,9 @@
 from flask import Flask, request, render_template
 from newsapi.newsapi_client import NewsApiClient
 
-
 ###############################
 ### News API Sample Code
 # https://github.com/mattlisiv/newsapi-python/tree/master/newsapi
-
-
-
 
 class News:
 
