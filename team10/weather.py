@@ -81,4 +81,4 @@ bootstrap = Bootstrap(app)
 @app.route('/weather')
 def index():
 
-	return render_template('index.html', city=city_name, conditions=current_conditions, temp = fTemp, wind=wind_speed, pressure=air_pressure, humid=humidity, graphic=graphic_link)
+	return render_template('weather.html', city=city_name, conditions=current_conditions, temp = fTemp, wind=wind_speed, pressure=air_pressure, humid=humidity, graphic=graphic_link)
