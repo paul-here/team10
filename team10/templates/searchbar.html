@@ -7,8 +7,7 @@
       <script type=text/javascript src="{{ url_for('static', filename='scripts.js') }}"></script>
       <title>There's No Place Like Homepage</title>
   </head>
-  <body>
-
+  <body class="iframe-body">
     <form action="" method="post">
       {{ form.csrf_token }}{{ form.hidden_tag() }}
       <p>
@@ -18,6 +17,5 @@
         {{ form.submit() }}
       </p>
     </form>
-
   </body>
 </html>

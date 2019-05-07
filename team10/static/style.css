@@ -4,8 +4,25 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+.iframe-body {
+  text-align: center;
+  background-image: linear-gradient(to right, #ffffff,#ffffff);
+}
+
 h1 {
-	font: Times, Helvetica;	
+	font: Times, Helvetica;
+}
+
+h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-style: oblique;
+  font-size: 3em;
+  color: blue;
+}
+
+p {
+  font: Times, Helvetica;
+  color: #334;
 }
 
 img {
@@ -15,11 +32,13 @@ img {
 }
 
 iframe {
+  width: 80%;
+  height: 425px;
+  padding: 0px;
+  margin: 0px;
   border-radius: 20px;
   border: solid blue;
   background-color: white;
-  width: 80%;
-  height: 425px;
 }
 
 button {
@@ -35,22 +54,3 @@ button:hover {
   cursor: pointer;
   border: 1px solid blue;
 }
-
-
-h2 {
-  font-family: 'Open Sans', sans-serif;
-  font-style: oblique;
-  font-size: 3em;
-  color: blue;
-}
-
-p {
-  font: Times, Helvetica;
-  color: #334; }
-
-ul {
-  font: Times, Helvetica; }
-  ul mid {
-    color: #334; }
-  ul top {
-    color: green; }
