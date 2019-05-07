@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <link rel="stylesheet" type="text/css" href= "{{ url_for('static', filename='style.css') }}" />
+      <script type=text/javascript src="{{ url_for('static', filename='jquery.js') }}"></script>
+      <script type=text/javascript src="{{ url_for('static', filename='scripts.js') }}"></script>
+      <title>There's No Place Like Homepage</title>
+  </head>
+  <body>
+    
+
+    <form action="/news" method="get">
+        <input type="text" name="query">
+        <button type="button" name="button">Submit</button>
+    </form>
+
+  </body>
+</html>
