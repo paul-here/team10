@@ -8,11 +8,15 @@
       <title>There's No Place Like Homepage</title>
   </head>
   <body>
-    
 
-    <form action="/news" method="get">
-        <input type="text" name="query">
-        <button type="button" name="button">Submit</button>
+    <form action="" method="post">
+      {{ form.csrf_token }}{{ form.hidden_tag() }}
+      <p>
+        {{ form.query.label }} <br> {{ form.query(size=32) }} <br>
+      </p>
+      <p>
+        {{ form.submit() }}
+      </p>
     </form>
 
   </body>
