@@ -10,19 +10,26 @@ body {
 }
 
 h1 {
-	font: Times, Helvetica;
-}
-
-h2 {
   font-family: 'Open Sans', sans-serif;
   font-style: oblique;
   font-size: 3em;
   color: blue;
 }
 
+h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-style: oblique;
+  font-size: 1.6em;
+  color: blue;
+}
+
 p {
   font: Times, Helvetica;
   color: #334;
+}
+
+a {
+  text-decoration: none;
 }
 
 img {
@@ -53,4 +60,24 @@ button {
 button:hover {
   cursor: pointer;
   border: 1px solid blue;
+}
+
+input {
+  border: 1px solid blue;
+  padding: 10px 24px;
+  margin: 6px;
+  font-size: 1em;
+  border-radius: 10px;
+}
+
+.column {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }

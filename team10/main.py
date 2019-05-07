@@ -5,7 +5,6 @@ from Search_Form import Search
 # init app
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'csumb-otter'
-#global query
 
 # default route -- homepage
 @app.route('/')
