@@ -27,7 +27,7 @@ class Weather:
 			wind_speed = data['consolidated_weather'][0]['wind_speed']
 			air_pressure = data['consolidated_weather'][0]['air_pressure']
 			self.humidity = data['consolidated_weather'][0]['humidity']
-			self.graphic_link = "/static/img/weather/" + condition_abbr + ".png"
+			self.graphic_link = "static/img/weather/png/" + condition_abbr + ".png"
 			holdFTemp = (current_temp * 1.8) + 32
 			self.fTemp = float('%.1f'%(holdFTemp))
 			self.wind_speed = float('%.1f'%(wind_speed))

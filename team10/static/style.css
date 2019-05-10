@@ -104,3 +104,26 @@ input {
   margin: 0 auto;
 
 }
+
+#nasaDescription{
+
+ width: 500px;
+ float: left;
+ text-align: left;
+
+}
+
+#nasaPhoto{
+
+  width: 400px;
+  margin-left: 300px;
+  border-radius: 10px;
+
+}
+
+#nasaParent{
+
+  width: 700px;
+  margin: 0 auto;
+
+}
