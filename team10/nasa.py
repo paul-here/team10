@@ -12,10 +12,6 @@ from pprint import pprint
 
 endpoint = 'https://api.nasa.gov/planetary/apod?api_key=cGzGzKqlSZgxF9T7ld9L2KDXEZlCuJdFfNyDyLKD&hd=true'
 
-
-
-
-
 try:
     r = requests.get(endpoint)
     data = r.json()
