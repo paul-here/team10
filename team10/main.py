@@ -1,6 +1,7 @@
 from flask import Flask, request, render_template, redirect
-from News_API_Proxy import News
-from Search_Form import Search
+from .News_API_Proxy import News
+from .Search_Form import Search
+from .Weather_API_Proxy import Weather
 
 # init app
 app = Flask(__name__)
@@ -26,6 +27,11 @@ def news(q):
         return redirect('/search')
     news_proxy = News(q)
     return render_template('newsapi.html', data=news_proxy.get_data())
+
+@app.route('/weather')
+def index():
+	weather_proxy = Weather()
+	return render_template('weather.html', city=weather_proxy.get_city(), temp=weather_proxy.get_temp(), conditions=weather_proxy.get_cond(), wind=weather_proxy.get_wind(), pressure=weather_proxy.get_pres(), humid=weather_proxy.get_humi(), graphic=weather_proxy.get_grap())
 
 
 if __name__ == "__main__":
