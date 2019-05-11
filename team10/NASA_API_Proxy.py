@@ -1,4 +1,8 @@
-import os, sys
+# Name: NASA_API_Proxy
+# Group Members: Chris Mayers, Paul Whipp, Chuy Gomez, David Gin
+# Date: 2/9/2019
+# Class: CST 205
+# Description: Defines a class which interacts with the NASA API to pass data to weather page template
 import requests, json
 
 class NASA:

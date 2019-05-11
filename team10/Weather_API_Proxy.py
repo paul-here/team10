@@ -1,10 +1,11 @@
-from flask import Flask, render_template
-from flask_bootstrap import Bootstrap
-from PIL import Image
-import os, sys
-import random
+# Name: Weather_API_Proxy
+# Group Members: Chris Mayers, Paul Whipp, Chuy Gomez, David Gin
+# Date: 2/9/2019
+# Class: CST 205
+# Description: Defines a class which interacts with the metaweather API to pass data to weather page template
+
 import requests, json
-from pprint import pprint
+
 
 class Weather:
 
