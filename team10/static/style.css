@@ -36,6 +36,12 @@ img {
     padding: 15px;
 }
 
+.news-img {
+    border-radius: 20px;
+    padding: 15px;
+    width: 150px;
+}
+
 iframe {
   width: 80%;
   height: 425px;
