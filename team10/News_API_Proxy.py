@@ -1,5 +1,5 @@
 from flask import Flask, request, render_template
-#from newsapi.newsapi_client import NewsApiClient
+from newsapi.newsapi_client import NewsApiClient
 
 ###############################
 ### News API Sample Code
@@ -19,15 +19,3 @@ class News:
     def new_query(self, q):
         self.query = q
         return get_data()
-
-
-# # default route -- homepage
-# @app.route('/')
-# def news():
-#     return render_template('newsapi.html', data=news.get_data())
-
-
-# if __name__ == "__main__":
-#     app = Flask(__name__)
-#     news = News('bitcoin')
-#     app.run(debug=True)
