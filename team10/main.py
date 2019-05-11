@@ -47,7 +47,7 @@ def nasa():
 # Google redirect
 @app.route('/goog')
 def goog():
-    return redirect('https://www.google.com/')
+    return redirect('https://www.google.com/search?igu=1')
 
 if __name__ == "__main__":
     app.run(debug=True)
