@@ -3,6 +3,7 @@ from News_API_Proxy import News
 from Search_Form import Search
 from Weather_API_Proxy import Weather
 from NASA_API_Proxy import NASA
+from Chuck_API_proxy import Chuck
 
 # init app
 app = Flask(__name__)
@@ -44,9 +45,11 @@ def nasa():
 	nasa = NASA()
 	return render_template('nasa.html', words=nasa.get_desc(), link=nasa.get_url())
 
+# Chuck Norris Joke
 @app.route('/chuck')
 def chuck():
-    pass
+    chuck = Chuck()
+    return render_template('chuck.html', joke=chuck.get_joke(), im=chuck.get_im())
 
 # Google redirect
 @app.route('/goog')
