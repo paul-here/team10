@@ -1,5 +1,5 @@
 from flask import request
-#from .newsapi_client import NewsApiClient
+from newsapi_client import NewsApiClient
 
 ###############################
 ### News API Sample Code
