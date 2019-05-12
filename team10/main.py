@@ -1,8 +1,8 @@
 from flask import Flask, request, render_template, redirect
-from .News_API_Proxy import News
-from .Search_Form import Search
-from .Weather_API_Proxy import Weather
-from .NASA_API_Proxy import NASA
+from News_API_Proxy import News
+from Search_Form import Search
+from Weather_API_Proxy import Weather
+from NASA_API_Proxy import NASA
 
 # init app
 app = Flask(__name__)
@@ -46,7 +46,7 @@ def nasa():
 
 @app.route('/chuck')
 def chuck():
-
+    pass
 
 # Google redirect
 @app.route('/goog')
