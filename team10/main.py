@@ -44,6 +44,10 @@ def nasa():
 	nasa = NASA()
 	return render_template('nasa.html', words=nasa.get_desc(), link=nasa.get_url())
 
+@app.route('/chuck')
+def chuck():
+
+
 # Google redirect
 @app.route('/goog')
 def goog():

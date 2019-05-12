@@ -1,4 +1,4 @@
-from flask import Flask, request, render_template
+from flask import request
 #from .newsapi_client import NewsApiClient
 
 ###############################
