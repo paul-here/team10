@@ -1,3 +1,10 @@
+<!--  Name: weather.html
+      Group Members: Chris Mayers, Paul Whipp, Chuy Gomez, David Gin
+      Date: 5/12/2019
+      Class: CST 205
+      Description: Jinja template creating the weather page framework.
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,29 +17,20 @@
 	<h2>{{city}} Weather</h2>
 
 	<div id = "weatherParent">
-		
+
 		<div id = "weatherInfo">
-			
 			<strong><p>Current Conditions:</strong>  {{conditions}}</p>
 			<strong><p>Current Temperature:</strong> {{temp}} °f</p>
 			<strong><p>Current Wind:</strong>        {{wind}} mph</p>
 			<strong><p>Air Pressure:</strong>        {{pressure}} mbar</p>
 			<strong><p>Humidity:</strong>            {{humid}}%</p>
-
 		</div>
-		
+
 		<div id = "weatherGraphic">
-			
 			<img src = "https://www.metaweather.com/{{graphic}}" width = "150">
-
 		</div>
-
 
 	</div>
-
-	
-
-	
-
+  
 </body>
 </html>

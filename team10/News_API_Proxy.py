@@ -1,4 +1,4 @@
-# Name: News_API_Proxy.py`
+# Name: News_API_Proxy.py
 # Group Members: Chris Mayers, Paul Whipp, Chuy Gomez, David Gin
 # Date: 5/12/2019
 # Class: CST 205

@@ -1,3 +1,10 @@
+/*  Name: style.css
+    Group Members: Chris Mayers, Paul Whipp, Chuy Gomez, David Gin
+    Date: 5/12/2019
+    Class: CST 205
+    Description: Styles for homepage and iframe templates
+*/
+
 body {
     text-align: center;
     background-image: linear-gradient(to right, #ffe6e6,#fff6e6,#ffffe6,#e6ffe6,#e6e6ff,#f4e6ff,#fce9fc);
@@ -86,49 +93,37 @@ input {
   clear: both;
 }
 
-#weatherInfo{
-
+#weatherInfo {
  width: 300px;
  float: left;
  text-align: left;
-
 }
 
-#weatherGraphic{
-
+#weatherGraphic {
   width: 200px;
   margin-left: 300px;
   background-color: #2f3030;
   border-radius: 10px;
-
 }
 
-#weatherParent{
-
+#weatherParent {
   width: 500px;
   margin: 0 auto;
-
 }
 
-#nasaDescription{
-
+#nasaDescription {
  width: 300px;
  float: left;
  text-align: left;
-
 }
 
-#nasaPhoto{
-
+#nasaPhoto {
   width: 500px;
   margin-left: 300px;
   border-radius: 10px;
-
 }
 
-#nasaParent{
-
+#nasaParent {
   width: 800px;
   margin: 0 auto;
-
 }

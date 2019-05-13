@@ -5,7 +5,7 @@
 # Group Members: Chris Mayers, Paul Whipp, Chuy Gomez, David Gin
 # Date: 5/12/2019
 # Class: CST 205
-# Description:  This script creates a Flask server and coordinates the 
+# Description:  This script creates a Flask server and coordinates the
 #               interaction between the API objects and the website.
 
 
@@ -67,5 +67,6 @@ def chuck():
 def goog():
     return redirect('https://www.google.com/search?igu=1')
 
+# run app
 if __name__ == "__main__":
     app.run(debug=True)
