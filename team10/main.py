@@ -1,3 +1,14 @@
+# Project: There's No Page Like Homepage
+# Project Description:  A simple homepage with searchable news, quick access to
+#                       google, a quick laugh, or the weather.
+# Name: main.py
+# Group Members: Chris Mayers, Paul Whipp, Chuy Gomez, David Gin
+# Date: 5/12/2019
+# Class: CST 205
+# Description:  This script creates a Flask server and coordinates the 
+#               interaction between the API objects and the website.
+
+
 from flask import Flask, request, render_template, redirect
 from News_API_Proxy import News
 from Search_Form import Search
