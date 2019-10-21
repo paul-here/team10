@@ -10,5 +10,5 @@ MarkupSafe==1.1.1
 newsapi-python==0.2.3
 requests==2.17.1
 urllib3==1.21.1
-Werkzeug==0.15.2
+Werkzeug==0.15.3
 WTForms==2.2.1
